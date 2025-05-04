@@ -14,6 +14,21 @@
   <link rel="stylesheet" href="style.css">
     <!--BootStrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "gjA2v0m6fTSevDrP2",
+      });
+   })();
+</script> 
+
+    <!-- Custom Script-->
+     <script type="module" src="script.js"></script>
+
 </head>
 <body>
   <!-- Navbar -->
@@ -46,17 +61,28 @@
   <section class="py-5" data-aos="fade-up">
     <div class="container">
       <div class="row g-5">
+
+        <!--Validator Block-->
+        <div id="form-message" style="display:none; padding:10px; margin-top:10px; border-radius:5px;"></div>
+
         <!-- Form -->
         <div class="col-lg-6" data-aos="fade-right">
-          <form action="#" method="POST" class="p-4 rounded bg-light shadow">
+          <form action="" method="" class="p-4 rounded bg-light shadow" id="contact-form">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
             </div>
+
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
             </div>
+
+            <div class="mb-3">
+              <label for="number" class="form-label">Phone Number</label>
+              <input type="number" class="form-control" id="number" name="number" placeholder="Phone Number" required>
+            </div>
+
             <div class="mb-3">
               <label for="subject" class="form-label">Subject</label>
               <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
@@ -65,14 +91,14 @@
               <label for="message" class="form-label">Message</label>
               <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
             </div>
-            <button type="submit" class="btn button btn-lg w-100">Send Message</button>
+            <button type="button" onclick="sendMail()" class="btn button btn-lg w-100">Send Message</button>
           </form>
         </div>
         <!-- Contact Info -->
         <div class="col-lg-6" data-aos="fade-left">
           <div class="p-4 rounded bg-white shadow">
             <h3 class="primary-color mb-3">Contact Information</h3>
-            <p><strong>Address:</strong><br>123 Learning Lane,<br>Knowledge City, ED 45678</p>
+            <p><strong>Address:</strong><br>7, Adesoye Street Mende,<br>Maryland Ikeja Lagos, Nigeria.</p>
             <p><strong>Email:</strong><br><a href="mailto:info@schulportals.com">info@schulportals.com</a></p>
             <p><strong>Phone:</strong><br><a href="tel:+2348023658920">(+234) 802 365 8920</a></p>
             <h5 class="mt-4">Follow Us</h5>
@@ -107,6 +133,52 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ once: false });
+
+    const messageBox = document.getElementById("form-message");
+
+function showMessage(text, isSuccess) {
+  messageBox.style.display = "block";
+  messageBox.textContent = text;
+  messageBox.style.backgroundColor = isSuccess ? "#d4edda" : "#f8d7da";
+  messageBox.style.color = isSuccess ? "#155724" : "#721c24";
+  messageBox.style.border = isSuccess ? "1px solid #c3e6cb" : "1px solid #f5c6cb";
+
+
+    setTimeout(() => {
+  messageBox.style.display = "none";
+}, 5000);
+}
+
+    function sendMail(){
+      const nameField = document.getElementById("name");
+      const emailField = document.getElementById("email");
+      const numberField = document.getElementById("number");
+      const subjectField = document.getElementById("subject");
+      const messageField = document.getElementById("message");
+
+      const params = {
+      name: nameField.value,
+      email: emailField.value,
+      number: numberField.value,
+      subject: subjectField.value,
+      message: messageField.value
+    };
+    
+      emailjs.send("service_01vofv6", "template_758s11l", params)
+      .then(() => {
+        showMessage("Message sent successfully!", true);
+        nameField.value = "";
+        emailField.value = "";
+        numberField.value = "";
+        subjectField.value = "";
+        messageField.value = "";
+    })
+    .catch((error) => {
+        showMessage("Failed to send message. Please try again.", false);
+        console.error(error)
+    });
+    
+  }
   </script>
 </body>
 </html>
