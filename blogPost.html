@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id="metaTitle">Blog | Schulportals Technologies Ltd</title>
+    <meta name="description" id="metaDesc" content="Insights and articles on e-learning, LMS best practices, and educational technology trends.">
+    <meta name="keywords" content="e-learning blog, LMS tips, educational technology articles, Schulportals blog">
+    
+    <link rel="canonical" href="https://www.schulportals.com/blog.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type"        content="article">
+    <meta property="og:url"         content="https://www.schulportals.com/blog.html?post=1">
+    <meta property="og:title"       content="" id="ogTitle">
+    <meta property="og:description" content="" id="ogDesc">
+    <meta property="og:image"       content="" id="ogImage">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:url"         content="https://www.schulportals.com/blog.html?post=1">
+    <meta name="twitter:title"       content="" id="twTitle">
+    <meta name="twitter:description" content="" id="twDesc">
+    <meta name="twitter:image"       content="" id="twImage">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg primary-bg-color navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="./images/logo-img2.png" alt="Schulportals Logo" width="120"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Detail -->
+  <article class="container py-5 mt-5" data-aos="fade-up">
+    <header class="mb-4">
+      <h1 class="mb-3 primary-color" id="postTitle">{{ postTitle }}</h1>
+      <div class="text-muted small">
+        <span class="me-3" id="postDate"><i class="bi bi-calendar-event"></i> {{ postDate }}</span>
+        <span><i class="bi bi-person" id="postAuthor"></i></span>
+      </div>
+      <img src="{{ postImage }}"  class="img-fluid rounded mt-4" id="postImage">
+    </header>
+
+    <section class="blog-content mb-5" id="postContent">
+      {{ postContent }}
+    </section>
+
+   <!-- Navigation -->
+ <nav class="d-flex justify-content-between border-top pt-4 mb-5">
+    <div id="prevLink"></div>
+    <div id="nextLink"></div>
+  </nav>
+
+  <!-- Comments -->
+  <section id="commentsSection">
+    <h3 class="primary-color">Comments</h3>
+    <ul id="commentsList" class="list-group mb-4"></ul>
+    <form id="commentForm">
+      <div class="mb-3">
+        <label for="commentAuthor" class="form-label">Name</label>
+        <input type="text" class="form-control" id="commentAuthor" required>
+      </div>
+      <div class="mb-3">
+        <label for="commentText" class="form-label">Comment</label>
+        <textarea class="form-control" id="commentText" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn button">Submit Comment</button>
+    </form>
+  </section>
+  </article>
+
+ 
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Schulportals Technologies Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false });
+  </script>
+
+  <script src="post.js"></script>
+
+
+  
+</body>
+</html>

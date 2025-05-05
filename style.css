@@ -84,3 +84,83 @@
     top: 50rem;
     position: fixed;
 } */
+
+.section3{
+    text-align: center;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.clientLogoContainer{
+    overflow: hidden;
+    position: relative;
+    /* width: 45rem; */
+
+
+
+    /* @media (width <= 50rem){
+        width: 10rem;
+    } */
+}
+
+.clientLogoTrack{
+    width: calc(13rem * 8);
+    display: flex;
+    animation: slide-pause 8s steps(8) infinite;
+
+
+
+
+    @media (width <= 50rem){
+        display: flex;
+        width: 100%;
+        animation: slide-pause 10s steps(8) infinite;
+    }
+}
+
+.clientLogo img{
+    height: 10rem;
+
+    @media (width <= 50rem){
+        height: 10rem;
+    }
+}
+
+
+.clientLogo{
+    text-align: center;
+    width: 11rem;
+    flex-shrink: 0;
+    margin: 2rem;
+    font-family: var(--style-text);
+
+    @media (width <= 50rem){
+        width: 100%;
+        margin: 0;
+        flex-shrink: 0;
+        text-align: center;
+
+    }
+}
+
+@keyframes slide-pause{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-15rem * 8));
+    }
+    
+}
+
+@media (width <= 50rem){
+    @keyframes slide-pause{
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-100% * 8));
+        }
+        
+    }
+}
