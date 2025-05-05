@@ -7,18 +7,7 @@
 // // TODO: Add SDKs for Firebase products that you want to use
 // // https://firebase.google.com/docs/web/setup#available-libraries
 
-// // Your web app's Firebase configuration
-// // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// const firebaseConfig = {
-//   apiKey: "AIzaSyBkyDlqZ6iI4Ctyi7uxc9ieucCKZNsv6JU",
-//   authDomain: "schulportals-28912.firebaseapp.com",
-//   projectId: "schulportals-28912",
-//   databaseUrl: "https://schulportals-28912-default-rtdb.firebaseio.com/",
-//   storageBucket: "schulportals-28912.firebasestorage.app",
-//   messagingSenderId: "928818611437",
-//   appId: "1:928818611437:web:3e6d4720421c906aaa38e4",
-//   measurementId: "G-JS5BLSYJ1E"
-// };
+
 
 // // Initialize Firebase
 // const app = initializeApp(firebaseConfig);
