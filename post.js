@@ -61,10 +61,10 @@ const POSTS = {
     const prevId = keys[idx - 1];
     const nextId = keys[idx + 1];
     if (prevId) {
-      document.getElementById('prevLink').innerHTML = `<a href="blog.html?post=${prevId}" class="btn btn-outline-primary"><i class=\"bi bi-arrow-left\"></i> ${POSTS[prevId].title}</a>`;
+      document.getElementById('prevLink').innerHTML = `<a href="blogPost.html?post=${prevId}" class="btn btn-outline-primary"><i class=\"bi bi-arrow-left\"></i> ${POSTS[prevId].title}</a>`;
     }
     if (nextId) {
-      document.getElementById('nextLink').innerHTML = `<a href="blog.html?post=${nextId}" class="btn btn-outline-primary">${POSTS[nextId].title} <i class=\"bi bi-arrow-right\"></i></a>`;
+      document.getElementById('nextLink').innerHTML = `<a href="blogPost.html?post=${nextId}" class="btn btn-outline-primary">${POSTS[nextId].title} <i class=\"bi bi-arrow-right\"></i></a>`;
     }
 
     // Comment logic with localStorage
