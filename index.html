@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schulportals Technologies Ltd | Empowering Education with Innovative LMS Solutions</title>
+  <title>SchulPortals Technologies Ltd | Empowering Education with Innovative LMS Solutions</title>
   <link rel="shortcut icon" href="favicon.png" sizes="16x16" type="image/x-icon">
   <!-- Primary Meta Tags -->
-  <meta name="description" content="Schulportals Technologies Ltd has over 20 years of experience providing cutting-edge LMS and e-learning solutions. Empower educators and students with secure, scalable, and user-friendly platforms.">
-  <meta name="keywords" content="LMS solutions, e-learning, learning management system, educational technology, online teaching, student portals, distance learning, Schulportals">
-  <meta name="author" content="Schulportals Technologies Ltd">
+  <meta name="description" content="SchulPortals Technologies Ltd has over 20 years of experience providing cutting-edge LMS and e-learning solutions. Empower educators and students with secure, scalable, and user-friendly platforms.">
+  <meta name="keywords" content="LMS solutions, e-learning, learning management system, educational technology, online teaching, student portals, distance learning, SchulPortals">
+  <meta name="author" content="SchulPortals Technologies Ltd">
   <link rel="canonical" href="https://www.schulportals.com/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.schulportals.com/">
-  <meta property="og:title" content="Schulportals Technologies Ltd | Empowering Education with Innovative LMS Solutions">
+  <meta property="og:title" content="SchulPortals Technologies Ltd | Empowering Education with Innovative LMS Solutions">
   <meta property="og:description" content="Over 20 years of expertise in delivering secure, scalable, and intuitive e-learning platforms for educational institutions worldwide.">
   <meta property="og:image" content="https://www.schulportals.com/images/logo-img2.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://www.schulportals.com/">
-  <meta name="twitter:title" content="Schulportals Technologies Ltd | Empowering Education with Innovative LMS Solutions">
+  <meta name="twitter:title" content="SchulPortals Technologies Ltd | Empowering Education with Innovative LMS Solutions">
   <meta name="twitter:description" content="Over 20 years of expertise in delivering secure, scalable, and intuitive e-learning platforms for educational institutions worldwide.">
   <meta name="twitter:image" content="https://www.schulportals.com/image/logo-img2.jpg">
   <!-- Custom Styles -->
@@ -48,13 +48,28 @@
   <!-- custom Script-->
    <script type="module" src="script.js"></script>
 
+   <style>
+/* Small, page-specific enhancements */
+.hero-caption { max-width: 720px; }
+.service-icon { font-size: 2.25rem; width:72px; height:72px; display:flex; align-items:center; justify-content:center; border-radius:16px; background: rgba(11,99,170,0.08); color: rgba(11,99,170,0.95); margin: 0 auto 1rem; }
+.service-card:hover{ transform: translateY(-6px); box-shadow:0 10px 30px rgba(11,99,170,0.08); transition: all .25s ease; }
+.client-grid img{ max-height:64px; object-fit:contain; }
+.why-list{ list-style: none; padding:0; }
+.why-list li{ padding: .5rem 0; }
+.testimonial-card{ border-radius:12px; padding:1.5rem; background:linear-gradient(180deg, #fff, #fbfbff); box-shadow: 0 8px 20px rgba(20,20,50,0.05); }
+footer .footer-col h5{ color: #fff; }
+.social a{ color: #cfe8ff; margin-right:.6rem; font-size:1.25rem; }
+/* Responsive tweaks */
+@media (max-width:767px){ .hero-caption { padding: 0 1rem; } }
+</style>
+
 </head>
 <body id="body">
   <!--Fade-In-NavBar-->
   <nav class="navbar navbar-expand-lg primary-bg-color navbar-dark fixed-top navBar" id="navBar">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="./images/logo-img2.png" alt="Schulportals Logo" width="120">
+        <img src="./images/logo-img2.png" alt="SchulPortals Logo" width="120">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -75,20 +90,20 @@
   <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-lg inherit fixed-top navbar-dark NavBarStatic">
     <div class="container">
-      <a class="navbar-brand secondary-color" href="#">
+      <a class="navbar-brand secondary-color logoText" href="#">
         SchulPortals
-        <!-- <img src="logo-img2.png" alt="Schulportals Logo" width="120"> -->
+        <!-- <img src="logo-img2.png" alt="SchulPortals Logo" width="120"> -->
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link secondary-color active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link secondary-color" href="/service.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link secondary-color" href="/about.html">About</a></li>
+        <ul class="navbar-nav ms-auto bg-dark p-3 rounded-3">
+          <li class="nav-item nav-border"><a class="nav-link secondary-color active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link secondary-color active" href="/service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link secondary-color active" href="/about.html">About</a></li>
           <!-- <li class="nav-item"><a class="nav-link secondary-color" href="/blogPost.html">Blog</a></li> -->
-          <li class="nav-item"><a class="nav-link secondary-color" href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link secondary-color active" href="/contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -96,7 +111,7 @@
 
 
   <!-- Hero Carousel -->
-  <div id="heroCarousel header" class="carousel slide header" data-bs-ride="carousel">
+  <!-- <div id="heroCarousel header" class="carousel slide header" data-bs-ride="carousel">
 
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
@@ -132,106 +147,134 @@
     <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon"></span>
     </button>
-  </div>
+  </div> -->
+
+  <!--Alt hero section-->
+  <header class="vh-100 d-flex align-items-center" style="background:linear-gradient(180deg, rgba(27, 27, 27, 0.801), rgba(27, 27, 27, 0.801)), url('https://img.freepik.com/premium-photo/young-african-american-teamlead-surrounded-by-his-subordinates-pointing-laptops-screen_249974-26378.jpg') center/cover no-repeat;">
+<div class="container text-white my-lg-5">
+<div class="row">
+<div class="col-lg-7 hero-caption" data-aos="fade-up">
+<h1 class="display-4 ">Empowering Education Through Thoughtful Technology</h1>
+<p class="lead">SchulPortals builds secure, accessible, and scalable Learning Management Systems that make administration simpler, teachers happier, and students more successful. Trusted by institutions for over 20 years.</p>
+<div class="mt-4">
+<a href="/service.html" class="btn btn-light btn-lg me-2 primary-bg-color">Explore Services</a>
+<a href="/contact.html" class="btn btn-outline-light btn-lg">Get in Touch</a>
+</div>
+</div>
+<!-- <div class="col-lg-5 d-none d-lg-flex justify-content-center align-items-center" data-aos="zoom-in">
+<img src="https://via.placeholder.com/440x360" alt="LMS illustration" class="img-fluid rounded shadow-lg">
+</div> -->
+</div>
+</div>
+</header>
 
   <!-- About Section -->
-  <section id="about" class="py-5" data-aos="fade-up">
-    <div class="container">
-      <h2 class="mb-4 text-center primary-color">About Us</h2>
-      <p class="text-center mx-auto description-text">
-        Schulportals Technologies Ltd. crafts cutting-edge learning management systems that streamline delivery, assessment, and analytics for academic excellence.
-      </p>
-    </div>
-  </section>
+  <section id="about" class="">
+<div class="container my-5" data-aos="fade-up">
+  <h2 class="mb-3 text-center aboutText">SchulPortals</h2>
+<div class="row align-items-center g-4">
+<div class="col-lg-6 order-lg-1">
+<p class="lead">With two decades of experience in education technology, SchulPortals helps institutions modernize learning through dependable software and human-centred services. We design systems that reduce admin overhead, improve learner outcomes, and scale as your institution grows.</p>
+
+
+<p>Our approach combines research-backed pedagogy with practical engineering — we don’t ship features for the sake of features. Instead we solve real problems: secure student data, simplify assessment workflows, integrate legacy systems, and give educators tools to create engaging, accessible content.</p>
+
+
+<p>Partner with us and you gain a team that understands both education and technology — from onboarding and training to integration and long-term support.</p>
+
+
+<a href="/about.html" class="btn button mt-3">Learn More</a>
+</div>
+<div class="col-lg-6 order-lg-2 text-center">
+<img src="./images/best employe.jpg" alt="Team working on LMS" class="img-fluid rounded shadow-sm">
+</div>
+</div>
+</div>
+</section>
 
   <!-- Services Section -->
-  <section id="services" class="bg-light py-5">
-    <div class="container" data-aos="fade-up" data-aos-delay="200">
-      <h2 class="mb-4 text-center primary-color">Our Services</h2>
-      <div class="row g-4">
-        <div class="col-md-4" data-aos="flip-left" data-aos-delay="300">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Custom LMS</h5>
-              <p class="card-text">Built from the ground up for your institution.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="flip-left" data-aos-delay="400">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Integration & Support</h5>
-              <p class="card-text">24/7 support and seamless API connections.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4" data-aos="flip-left" data-aos-delay="500">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body text-center">
-              <h5 class="card-title">Training</h5>
-              <p class="card-text">Hands-on workshops for educators and admins.</p>
-            </div>
-          </div>
-        </div>
+  <section id="services" class="py-5 bg-light">
+    <div class="container" data-aos="fade-up">
+<h2 class="text-center mb-4 primary-color">Our Services</h2>
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="200">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-person-video2"></i></div>
+  <div class="card-body text-center">
+  <h5>Students & Lecturers Web Services</h5>
+  <p class="mb-0">Personalized dashboards, assignment management, and secure messaging for every stakeholder.</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="250">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-laptop"></i></div>
+  <div class="card-body text-center">
+  <h5>E-Teaching & E-Learning Portals</h5>
+  <p class="mb-0">Virtual classrooms, content authoring, quizzes and learning paths with analytics for instructors.</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="300">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-journal-text"></i></div>
+  <div class="card-body text-center">
+  <h5>Online Lecturing & Training Programmes</h5>
+  <p class="mb-0">Live and on-demand lecture delivery with moderation, recording and certification workflows.</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="350">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-gear"></i></div>
+  <div class="card-body text-center">
+  <h5>ICT Consulting & Portal Solutions</h5>
+  <p class="mb-0">Strategy, roadmap and custom portal development to align technology with institutional goals.</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="400">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-pencil-square"></i></div>
+  <div class="card-body text-center">
+  <h5>Content Development & Research Support</h5>
+  <p class="mb-0">Curriculum design, multimedia content production and research editing to elevate course quality.</p>
+  </div>
+  </div>
+  </div>
+
+
+  <div class="col-md-6 col-lg-4" data-aos="flip-left" data-aos-delay="450">
+  <div class="card h-100 service-card p-3 border-1 rounded-2 bg-transparent">
+  <div class="service-icon mx-auto"><i class="bi bi-code-slash"></i></div>
+  <div class="card-body text-center">
+  <h5>Application Development & Deployment</h5>
+  <p class="mb-0">Custom LMS, API integrations and cloud deployment for a reliable learning experience.</p>
+  </div>
+  </div>
+  </div>
+
+
+  </div>
+  </div>
       </div>
-    </div>
-  </section>
+      </div>
+
+</section>
 
   <!-- Blog Preview Section -->
-  <section id="blog-preview" class="py-5 bg-light">
-    <div class="container" data-aos="fade-up">
-      <h2 class="text-center primary-color mb-4">Latest from Our Blog</h2>
-      <div class="row g-4">
-        <!-- Blog Card 1 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="./images/best employe.jpg" class="card-img-top" alt="Maximizing Student Engagement">
-            <div class="card-body">
-              <h5 class="card-title">Maximizing Student Engagement</h5>
-              <p class="card-text">Discover proven strategies to keep learners motivated in an online environment.</p>
-              <a href="blogPost.html?post=1" class="btn btn-outline-primary">Read More</a>
-            </div>
-            <div class="card-footer text-muted small">
-              April 10, 2025 by Schulportals Team
-            </div>
-          </div>
-        </div>
-        <!-- Blog Card 2 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="./images/best employe.jpg" class="card-img-top" alt="Top LMS Features in 2025">
-            <div class="card-body">
-              <h5 class="card-title">Top LMS Features in 2025</h5>
-              <p class="card-text">Explore the essential tools every modern learning management system should offer.</p>
-              <a href="blogPost.html?post=2" class="btn btn-outline-primary">Read More</a>
-            </div>
-            <div class="card-footer text-muted small">
-              March 22, 2025 by Schulportals Team
-            </div>
-          </div>
-        </div>
-        <!-- Blog Card 3 -->
-        <div class="col-md-4">
-          <div class="card h-100 shadow-sm">
-            <img src="./images/best employe.jpg" class="card-img-top" alt="Hosting Effective Webinars">
-            <div class="card-body">
-              <h5 class="card-title">Hosting Effective Webinars</h5>
-              <p class="card-text">Learn best practices for planning, promoting, and executing engaging online workshops.</p>
-              <a href="blogPost.html?post=3" class="btn btn-outline-primary">Read More</a>
-            </div>
-            <div class="card-footer text-muted small">
-              February 15, 2025 by Schulportals Team
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section3 container-fluid" data-aos="fade-up" data-aos-duration="2000">
-    <div class="row justify-content-center">
-      <div class="col-8">
-        <h1 class="primary-color">We've Worked With</h1>
+  <section id="blog-preview" class="py-5">
+<div class="row g-4 justify-content-center blog-preview-section">
+<div class="col-lg-6">
+<h1 class="primary-color text-center">We've Worked With</h1>
 
     <div class="clientLogoContainer ">
 
@@ -241,7 +284,7 @@
         <p>National University Commission (NUC)</p>
     </div>
     <div class="clientLogo">
-        <img src="https://networks.au-ibar.org/show/university-of-lagos-yaba-lagos-nigeria/wiki-image/AU+REC+logos+%2835%29.png" alt="" class="clientLogo1" style="width: 10rem;">
+        <img src="./images/unilag.png" alt="" class="clientLogo1" style="width: 10rem;">
         <p>University of Lagos Distance Learning Institute</p>
     </div>
     <div class="clientLogo">
@@ -274,7 +317,7 @@
         <p>National University Commission (NUC)</p>
     </div>
     <div class="clientLogo">
-        <img src="https://networks.au-ibar.org/show/university-of-lagos-yaba-lagos-nigeria/wiki-image/AU+REC+logos+%2835%29.png" alt="" class="clientLogo1" style="width: 10rem;">
+        <img src="./images/unilag.png" alt="" class="clientLogo1" style="width: 10rem;">
         <p>University of Lagos Distance Learning Institute</p>
     </div>
     <div class="clientLogo">
@@ -304,8 +347,51 @@
     
 </div>
 </div>
+      
+</div>
+
+<!--Blog section-->
+<div class="col-lg-4 mx-2">
+<h3 class="mb-3 primary-color text-center">Latest News & Insights</h3>
+<ul class="list-group">
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div>
+<div class="fw-bold">Maximizing Student Engagement</div>
+<small class="text-muted">April 10, 2025 — Ideas for interactive online learning</small>
+</div>
+<a href="blogPost.html?post=1" class="btn btn-sm btn-outline-primary">Read</a>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div>
+<div class="fw-bold">Top LMS Features in 2025</div>
+<small class="text-muted">March 22, 2025 — What modern platforms must include</small>
+</div>
+<a href="blogPost.html?post=2" class="btn btn-sm btn-outline-primary">Read</a>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-start">
+<div>
+<div class="fw-bold">Hosting Effective Webinars</div>
+<small class="text-muted">February 15, 2025 — Tips to run engaging online workshops</small>
+</div>
+<a href="blogPost.html?post=3" class="btn btn-sm btn-outline-primary">Read</a>
+</li>
+</ul>
+
+
+        <div class="mt-4">
+          <a href="blog.html" class="btn btn-outline-primary">View all posts</a>
+        </div>
       </div>
     </div>
+  </div>
+</div>
+</section>
+
+  <!-- <section class="section3 container-fluid" data-aos="fade-up" data-aos-duration="2000">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        
+    </div> -->
 
     
 
@@ -317,22 +403,22 @@
     <div class="container" data-aos="fade-up">
       <h2 class="text-center primary-color mb-4">Why Choose Us</h2>
       <div class="row g-4">
-        <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="100">
           <i class="bi bi-shield-check fs-1 primary-color"></i>
           <h5 class="mt-3">Secure & Reliable</h5>
           <p>Our platforms are built with top-tier security protocols to protect your data.</p>
         </div>
-        <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="200">
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="200">
           <i class="bi bi-phone fs-1 primary-color"></i>
           <h5 class="mt-3">Mobile Friendly</h5>
           <p>Access your learning portal on any device, anytime, anywhere.</p>
         </div>
-        <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="300">
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="300">
           <i class="bi bi-people fs-1 primary-color"></i>
           <h5 class="mt-3">User-Centric</h5>
           <p>Intuitive interfaces designed for both educators and students.</p>
         </div>
-        <div class="col-md-3 text-center" data-aos="zoom-in" data-aos-delay="400">
+        <div class="col-md-6 text-center" data-aos="zoom-in" data-aos-delay="400">
           <i class="bi bi-bar-chart fs-1 primary-color"></i>
           <h5 class="mt-3">Analytics</h5>
           <p>Integrated analytics to track performance and drive improvement.</p>
@@ -361,7 +447,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active text-center">
             <blockquote class="blockquote">
-              <p class="mb-4">“Schulportals transformed our university’s e-learning experience. Exceptional support!”</p>
+              <p class="mb-4">“SchulPortals transformed our university’s e-learning experience. Exceptional support!”</p>
               <footer class="blockquote-footer">Dr. A. Akande, University Dean</footer>
             </blockquote>
           </div>
@@ -424,9 +510,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
 
-    <!-- Newsletter Section -->
+    
+
+    <footer class="bg-dark text-white pt-5">
+      
+      <!-- Newsletter Section -->
   <!-- <section id="newsletter" class="py-5 primary-bg-color text-white">
     <div class="container text-center" data-aos="fade-up">
       <h2>Stay Updated</h2>
@@ -442,10 +531,60 @@
     </div>
   </section> -->
 
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Schulportals Technologies Ltd. All rights reserved.</p>
-    </div>
-  </footer>
+<div class="container">
+<div class="row gy-4">
+<div class="col-md-4 footer-col">
+<h5>About <span class="aboutText">SchulPortals</span></h5>
+<p>Two decades of building learning platforms for institutions. We focus on usability, security and measurable outcomes.</p>
+<div class="social">
+<a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+<a href="#" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+<a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+</div>
+</div>
+<hr class="mt-4 hr-display" style="border-color: rgba(255, 255, 255, 0.514)">
+
+<div class="col-md-2 footer-col">
+<h5>Services</h5>
+<ul class="list-unstyled">
+<li><a href="/service.html" class="text-light">Custom LMS</a></li>
+<li><a href="/service.html#integration" class="text-light">Integration</a></li>
+<li><a href="/service.html#training" class="text-light">Training</a></li>
+<li><a href="/service.html#content" class="text-light">Content & Research</a></li>
+</ul>
+</div>
+<hr class="mt-4 hr-display" style="border-color: rgba(255, 255, 255, 0.514)">
+
+<div class="col-md-3 footer-col">
+<h5>Resources</h5>
+<ul class="list-unstyled">
+<li><a href="/blog.html" class="text-light">Blog</a></li>
+<li><a href="/sitemap.xml" class="text-light">Sitemap</a></li>
+<li><a href="/privacy.html" class="text-light">Privacy Policy</a></li>
+</ul>
+</div>
+<hr class="mt-4 hr-display" style="border-color: rgba(255, 255, 255, 0.514)">
+
+<div class="col-md-3 footer-col">
+<h5>Contact</h5>
+<p class="mb-1">SchulPortals Technologies Ltd</p>
+<p class="mb-1"><strong>Email:</strong> <a href="mailto:info@schulportals.com">info@schulPortals.com</a></p>
+<p class="mb-1"><strong>Phone:</strong> <a href="tel:+2348023658920">(+234) 802 365 8920</a></p>
+<p class="mb-0"><strong>Address:</strong> 7, Adesoye Street Mende,<br>Maryland Ikeja Lagos, Nigeria.</p>
+</div>
+</div>
+
+
+<hr class="mt-4" style="border-color: rgba(255, 255, 255, 0.76)">
+<div class="d-flex justify-content-between align-items-center pb-4">
+<small>&copy; 2025 SchulPortals Technologies Ltd. All rights reserved.</small>
+<div>
+<a href="/terms.html" class="text-light me-3">Terms</a>
+<a href="/contact.html" class="text-light">Contact</a>
+</div>
+</div>
+</div>
+</footer>
 
    <!-- Back to Top Button -->
    <button id="backToTop" class="btn btn-primary position-fixed" style="bottom:20px;right:20px;display:none;">
@@ -540,3 +679,10 @@ function showMessage(text, isSuccess) {
 </script>
 
 </html>
+
+
+
+
+
+
+
